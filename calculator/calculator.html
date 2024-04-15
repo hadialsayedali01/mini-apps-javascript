@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            background-color:black;
+            font-family:'Courier New', Courier, monospace; 
+        }
+
+        #buttonArr {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:darkgray;
+            border:10px solid grey;
+            border-radius: 12%;
+            border-style: outset;
+        }
+
+        #buttonArr * {
+            margin:14px;
+            user-select: none;
+        }
+
+        .rowDiv{
+            display:flex;
+        }
+
+        .btnSticker{
+            border:2px solid grey;
+            border-radius: 32%;
+            padding:10px;
+            background-color:white;
+            border-style: outset;
+        }
+
+        .btnSticker:hover{
+            background-color:black;
+            color:white;
+        }
+
+        #screen{
+            background-color:green;
+            width:200px;
+            height:50px;
+            border:2px solid black;
+            color:white;
+            font-size: larger;
+            display:flex;
+            justify-content:left;
+            align-items: center;
+            padding:10px;
+            overflow-x: scroll;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1 style="color:white;" id="title">Calculator</h1>
+    <h2 style="font-size:15px;color:white;font-style: italic;" id="title">If value exceeds display width, scroll within the screen</h2>
+    <div id="buttons"></div>
+</body>
+<script src="calculator.js">
+
+</script>
+</html>

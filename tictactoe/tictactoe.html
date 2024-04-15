@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        html{
+            background-color: aquamarine;
+        }
+        * {
+            font-family:fantasy;
+        }
+        body, #header,#results{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            display:flex;
+            flex-direction:column;
+        }
+        form input{
+            margin-bottom:5px;
+        }
+        #gameArr{
+            display:flex;
+            flex-direction: column;
+            background-color:black;
+            justify-content: center;
+            align-items: center;
+        }
+        .rowDiv{
+            background-color:green;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .square{
+            background-color:yellow;
+            width:100px;
+            height:100px;
+            border:2px solid black;
+            font-size:30px;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        #results{
+            width:100%;
+            height:1em;
+        }
+        #restart-game{
+            display:none;
+        }
+
+        #submit-form{
+            margin-top:10px;
+        }
+
+        button, input{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="header">
+        <h1>Tic Tac Toe</h1>
+        <button id="restart-game">Restart Game</button>
+        <h2 id="turn-teller"></h2>
+        <div id="results"></div>
+    </div>
+    <div id="gameArr">
+        
+    <dialog id="ask-names-dialog">
+        <form name="ask-names">
+            <label for="player1">Player 1 Name:</label>
+            <input type="text" name="player1">
+            <label for="player2">Player 2 Name:</label>
+            <input type="text" name="player2">
+            <button id="submit-form" type="button">Submit</button>
+        </form>
+    </dialogue>
+    
+</body>
+<script src="tictactoe.js">
+
+</script>
+</html>
